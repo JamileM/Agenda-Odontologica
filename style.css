@@ -1,0 +1,74 @@
+/* Estilos básicos para começar */
+:root {
+  --bg: #0f172a;
+  --panel: #111827;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+  --brand: #22c55e;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+  background: linear-gradient(180deg, var(--bg), #020617);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+a { color: var(--brand); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container {
+  width: min(100% - 2rem, 1000px);
+  margin-inline: auto;
+  padding: 1rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: rgba(17, 24, 39, 0.6);
+  border: 1px solid #1f2937;
+  border-radius: 16px;
+  padding: 1rem 1.25rem;
+  margin-block: 1rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  backdrop-filter: blur(4px);
+}
+
+button {
+  padding: .6rem 1rem;
+  border-radius: 999px;
+  border: 0;
+  font-weight: 600;
+  cursor: pointer;
+  background: var(--brand);
+  color: #062b12;
+}
+
+button:hover { filter: brightness(1.05); }
+
+footer {
+  opacity: .8;
+  font-size: .9rem;
+  padding-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  header { flex-direction: column; align-items: flex-start; gap: .5rem; }
+}

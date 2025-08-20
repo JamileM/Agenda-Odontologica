@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agenda Odontológica</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="container">
+    <h1>Agenda Odontológica</h1>
+    <nav class="nav">
+      <a href="#">Início</a>
+      <a href="#agenda">Agenda</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="agenda" class="card">
+      <h2>Minha Agenda</h2>
+      <p>Registre consultas, horários e informações importantes dos pacientes.</p>
+      <button id="botao">Adicionar Consulta</button>
+    </section>
+
+    <section id="contato" class="card">
+      <h2>Contato</h2>
+      <form id="form-contato">
+        <label>Nome<br><input type="text" name="nome" required></label><br><br>
+        <label>E-mail<br><input type="email" name="email" required></label><br><br>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="container">
+    <p>&copy; 2025 — Agenda Odontológica</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
